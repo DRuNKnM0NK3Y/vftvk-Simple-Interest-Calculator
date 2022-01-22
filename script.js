@@ -1,3 +1,5 @@
+
+/* Validate that the user entered a positive amount */
 function validateAmount(){
     var amount = document.getElementById("principal").value;
     if (amount <= 0){    
@@ -6,6 +8,8 @@ function validateAmount(){
     document.getElementById("principal").focus();
 }
 
+/* Compute the interest given the amount, interest rate, and years (1 to 10) */
+/* Display the input values and computed interest                            */
 function compute(){
     var p = document.getElementById("principal").value;
     var r = document.getElementById("rate").value;
@@ -22,7 +26,7 @@ function compute(){
     + "in the year " + "\<mark\>" + year + "\</mark\>" + ".";
 }
 
-
+/* Display the value on the range */
 function showValue(newvalue) {
     document.getElementById("rate_val").innerHTML = newvalue;
 }
